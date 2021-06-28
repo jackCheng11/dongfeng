@@ -1,0 +1,100 @@
+/* pages/fruit/fruit.wxss */
+.fruit{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4F548F;
+}
+.fruit-top{
+  background-color: #ffffff;
+  margin: 18rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-center{
+  padding-left: 30rpx;
+}
+.title-left{
+  padding: 8rpx 9rpx;
+  background-color: #FFD54A;
+  color: #ffffff;
+}
+.title-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.title-right-time{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10rpx;
+}
+.title-p{
+  padding-top: 10rpx;
+}
+.title-btn{
+  margin-right: 30rpx;
+  background-color: #FFD54A;
+  color: #ffffff;
+  font-size: 23rpx;
+  padding: 8rpx 17rpx;
+  border-radius: 25rpx;
+}
+
+.calendars-create{
+  background-color: #4F548F !important;
+  margin: 30rpx 40rpx 0;
+}
+.calendars-image{
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  height: 180rpx;
+}
+.pp{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.cv{
+  color: #FFD54A;
+  padding: 0 8rpx;
+}
+.register{
+  padding: 15rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ffffff;
+}
+.register-btn{
+  background-color: #4F548F;
+  padding: 15rpx 40rpx 100rpx;
+}
+.brw{
+  margin-top: 15rpx;
+  color: #ffffff;
+  border: 1rpx solid #ffffff;
+  font-size: 23rpx;
+  padding: 8rpx 50rpx;
+  border-radius: 30rpx;
+}
+.register-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.register-btn-yy{
+  color: white;
+  font-size: 36rpx;
+  background-color: #FFD54A;
+  border-radius: 40rpx;
+  padding: 18rpx 0;
+  text-align: center;
+}
+.calendar {
+  --calendar-height: 370px;
+}

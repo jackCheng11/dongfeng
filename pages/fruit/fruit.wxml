@@ -1,0 +1,38 @@
+<!--pages/fruit/fruit.wxml-->
+<view>
+  <mp-navigation-bar></mp-navigation-bar>
+  <view class="fruit" style="top: {{navBarHeight}}px">
+    <view class="fruit-top">
+      <view class="title-flex">
+        <view class="title-left">
+          <view style=" writing-mode: tb-rl;">· 今 日 签 ·</view>
+        </view>
+        <view class="title-center">
+          <view class="title-right-time">
+            <view class="time1">6月23日</view>
+            <view class="time2">星期三</view>
+          </view>
+          <view class="title-p">锲而不舍，金石可摧</view>
+        </view>
+      </view>
+      <view class="title-btn">
+        <view class="btn-y">分享签语</view>
+      </view>
+    </view>
+    <view class="calendars-create">
+      <image class="calendars-image" src="/image/img/qdljb.png"></image>
+      <view class="register">
+        <view>已连续签到<text class="cv">2</text>天</view>
+        <view class="title-btn pp">补签</view>
+      </view>
+      <van-calendar title="" poppable="{{ false }}" show-confirm="{{ false }}" class="calendar" />
+    </view>
+    <view class="register-btn">
+      <view class="register-btn-yy">签到</view>
+      <view class="register-flex">
+        <view class="brw">查看排行</view>
+        <view class="brw">我的奖品</view>
+      </view>
+    </view>
+  </view>
+</view>

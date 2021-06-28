@@ -1,19 +1,12 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+page{
+  height: 100%;
 }
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.usermotto {
-  margin-top: 200px;
+.container{
+  /* position: absolute;
+  width: 100%;
+  height: 100%; */
+  height: 100%;
+  background-image: url('/image/img/home-bj.png');
+  background-repeat: no-repeat;
 }

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-navigation-bar": "/components/navigatorBar/navigatorBar",
+    "van-calendar": "@vant/weapp/calendar/index"
+  },
+  "navigationStyle": "custom",
+  "navigationBarTitleText": ""
+}

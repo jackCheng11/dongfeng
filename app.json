@@ -1,14 +1,48 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/games/games",
+    "pages/find/find",
+    "pages/fruit/fruit",
+    "components/navigatorBar/navigatorBar"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#191D4D",
+    "color": "#666666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./image/tabbar/index-1.png",
+        "selectedIconPath": "./image/tabbar/index.png"
+      },
+      {
+        "pagePath": "pages/games/games",
+        "text": "游戏",
+        "iconPath": "./image/tabbar/gamenewgamenew-1.png",
+        "selectedIconPath": "./image/tabbar/gamenewgamenew.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "./image/tabbar/发现-1.png",
+        "selectedIconPath": "./image/tabbar/发现.png"
+      },
+      {
+        "pagePath": "pages/fruit/fruit",
+        "text": "成果",
+        "iconPath": "./image/tabbar/签到_打卡-1.png",
+        "selectedIconPath": "./image/tabbar/签到_打卡.png"
+      }
+    ]
+  },
+  "debug": true,
   "sitemapLocation": "sitemap.json"
 }

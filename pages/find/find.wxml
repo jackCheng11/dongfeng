@@ -1,0 +1,55 @@
+<!--pages/find/find.wxml-->
+<view>
+  <mp-navigation-bar></mp-navigation-bar>
+  <view class="find" style="top: {{navBarHeight}}px">
+    <view class="section-swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+        duration="{{duration}}">
+        <block wx:for="{{SwiperImg}}" wx:key="index">
+          <swiper-item>
+            <image class="swiperImg" src="{{item.url}}" mode="aspectFill"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="receive">
+    <view class="win-pic">
+      <image class="win-pic-img" src="/image/img/icon-zjt.png"></image>
+      <view>获奖作品</view>
+      <image class="win-pic-img" src="/image/img/icon-yjt.png"></image>
+    </view>
+    <view class="receive-toSay">
+
+      <view class="receive-info">
+        <image class="receive-info-img" src=""></image>
+        <view>
+          <view>name</view>
+          <view>时间</view>
+        </view>
+      </view>
+
+      <view>
+        <view style="margin: 10rpx 0">......大dasd</view>
+        <image src="/image/img/fx-img1.png"></image>
+      </view>
+
+      <view class="receive-good">
+        <view class="receive-good-flex">
+          <image class="receive-good-img" src="/image/img/icon-dz.png"></image>
+          <text>123</text>
+        </view>
+
+        <view  class="receive-good-flex">
+          <image class="receive-good-img" src="/image/img/icon-pl.png"></image>
+          <text>123</text>
+        </view>
+        <view class="receive-good-flex">
+          <image class="receive-good-img" src="/image/img/icon-zf.png"></image>
+          <text>123</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>
+  
+</view>

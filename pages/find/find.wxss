@@ -1,0 +1,58 @@
+/* pages/find/find.wxss */
+.find{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.receive{
+
+}
+.win-pic{
+  margin: 20rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.win-pic-img{
+  width: 200rpx;
+  height: 12rpx;
+}
+.swiperImg{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.receive-toSay{
+  margin: 27rpx 60rpx;
+}
+.receive-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.receive-info-img{
+  margin-right: 20rpx;
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+  background-color: #fd4913;
+  border-radius: 50%;
+}
+.receive-good{
+  margin: 14rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.receive-good-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.receive-good-img{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  padding-right: 10rpx;
+}

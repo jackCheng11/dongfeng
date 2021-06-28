@@ -1,0 +1,45 @@
+<!--pages/games/games.wxml-->
+<view>
+  <mp-navigation-bar></mp-navigation-bar>
+  <view class="game" style="top: {{navBarHeight}}px">
+    <view class="section-swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+        duration="{{duration}}">
+        <block wx:for="{{SwiperImg}}" wx:key="index">
+          <swiper-item>
+            <image class="swiperImg" src="{{item.url}}" mode="aspectFill"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="section-info">
+      <view class="section-info-title">TOP 10 榜单</view>
+      <view class="section-info-main">
+        <view class="table-top">
+          <view class="sc">排名</view>
+          <view class="sc">姓名</view>
+          <view class="sc">次数</view>
+          <view class="sc">正确</view>
+        </view>
+        <view class="table-data">
+          <scroll-view scroll-y="true" style="height: 800rpx">
+            <block wx:for="{{infoData}}" :key="index">
+              <view class="table-data-main">
+                <view>{{item.id}}</view>
+                <view class="flex-row">
+                  <image class="infoData-image" src="{{}}"></image>
+                  <view>{{item.name}}</view>
+                </view>
+
+                <view>{{item.num}}</view>
+
+                <view>{{item.answer}}</view>
+              </view>
+            </block>
+          </scroll-view>
+          <view class="mine-info">我的排名：<text>56</text>名</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

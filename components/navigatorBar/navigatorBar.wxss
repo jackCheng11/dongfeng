@@ -1,0 +1,28 @@
+/* components/navigatorBar/navigatorBar.wxss */
+.comBar{
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.avanter{
+  position: relative;
+}
+.avanter-image{
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #fd4913;
+  border-radius: 50%;
+  margin-left: 60rpx;
+  margin-top: 15rpx;
+}
+.title{
+  margin-top: 10rpx;
+}
+.title{
+  position: absolute;
+  left: calc(50% - 32px);
+}

@@ -1,0 +1,69 @@
+/* pages/games/games.wxss */
+.game{
+  position: absolute;
+  bottom: 0;
+  /* overflow-y: auto; */
+  width: 100%;
+}
+.swiperImg{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section-info-title{
+  position: relative;
+  margin: 38rpx 0 38rpx 60rpx;
+  padding-left: 20rpx;
+  padding-top: 9rpx;
+}
+.section-info-title::before{
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 5rpx solid #4F548F;
+}
+.section-info-main{
+  color: #FFFFFF;
+  background-color: #4F548F;
+  margin: 0 23rpx;
+}
+.table-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.table-data-main{
+  background-color: #191D4D;
+  margin: 13rpx 20rpx;
+  padding: 14rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.sc{
+  padding: 30rpx 0;
+}
+
+.infoData-image{
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #fd4913;
+  border-radius: 50%;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-left: -s40rpx; */
+}
+
+.mine-info{
+  padding: 30rpx 0;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+<!--components/navigatorBar/navigatorBar.wxml-->
+<view class="comBar" style="padding-top: {{statusBarHeight}}px;height: {{menuButtonHeight}}px">
+  <view class="avanter">
+    <image class="avanter-image"></image>
+  </view>
+  <view class="title">
+    环保互动
+  </view>
+</view>

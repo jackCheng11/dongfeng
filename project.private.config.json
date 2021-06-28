@@ -1,0 +1,35 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/games/games",
+          "pathName": "pages/games/games",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/find/find",
+          "pathName": "pages/find/find",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/fruit/fruit",
+          "pathName": "pages/fruit/fruit",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
