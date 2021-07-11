@@ -1,0 +1,4 @@
+<!--pages/webView/webView.wxml-->
+<view class="content">
+  <web-view src="https://xnf.whctcq.com/"></web-view>
+</view>

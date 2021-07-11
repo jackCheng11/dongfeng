@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "mp-navigation-bar": "/components/navigatorBar/navigatorBar"
+  },
   "navigationStyle": "custom"
 
 }

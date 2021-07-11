@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="login-text">欢迎登东风本田环保小程序</view>
+  <view class="login-input">
+    <van-cell-group>
+      <view style="padding-bottom:15rpx">
+        <van-field clearable="{{true}}" value="{{ username }}" bind:change="onChangeName" label="用户名" placeholder="请输入用户名" left-icon="manager" />
+      </view>
+      <view style="padding-bottom:15rpx">
+        <van-field clearable="{{true}}" type="password" bind:change="onChangePwd" value="{{ password }}" label="密码" placeholder="请输入密码"
+          left-icon="coupon" border="{{ true }}" />
+      </view>
+    </van-cell-group>
+    <view>
+      <van-button type="primary" bindtap="loginBtn" round block>login</van-button>
+    </view>
+  </view>
+</view>

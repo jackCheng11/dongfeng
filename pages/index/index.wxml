@@ -1,5 +1,9 @@
 <!--index.wxml-->
 <view class="container">
+    <mp-navigation-bar></mp-navigation-bar>
+<view class="bg">
+<image src="http://192.168.1.15:8090/static/img/bg02.png"></image>
+</view>
     <!-- 陈刚 -->
     <!-- <image src="/image/img/home-bj.png"></image> -->
 </view>

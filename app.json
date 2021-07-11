@@ -1,9 +1,11 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/index/index",
     "pages/games/games",
     "pages/find/find",
     "pages/fruit/fruit",
+    "pages/webView/webView",
     "components/navigatorBar/navigatorBar"
   ],
   "window":{

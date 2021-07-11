@@ -96,5 +96,5 @@
   text-align: center;
 }
 .calendar {
-  --calendar-height: 370px;
+  --calendar-height: 350px;
 }

@@ -7,7 +7,7 @@
         duration="{{duration}}">
         <block wx:for="{{SwiperImg}}" wx:key="index">
           <swiper-item>
-            <image class="swiperImg" src="{{item.url}}" mode="aspectFill"></image>
+            <image class="swiperImg" src="{{item.imageUrl}}" mode="aspectFill"></image>
           </swiper-item>
         </block>
       </swiper>
@@ -30,7 +30,7 @@
 
       <view>
         <view style="margin: 10rpx 0">......大dasd</view>
-        <image src="/image/img/fx-img1.png"></image>
+        <image class="say-img" src="/image/img/fx-img1.png"></image>
       </view>
 
       <view class="receive-good">

@@ -1,4 +1,10 @@
 // pages/games/games.js
+const {
+  get,
+  post
+} = require("../../utils/request");
+
+//获取应用实例
 const app = getApp()
 
 Page({
@@ -8,75 +14,9 @@ Page({
    */
   data: {
     navBarHeight: app.globalData.navBarHeight,
-    SwiperImg: [
-      {
-        url: "/image/img/31624860162_.pic_hd.jpg"
-      },
-      {
-        url: "/image/img/41624860174_.pic_hd.jpg"
-      },
-      {
-        url: "/image/img/51624860191_.pic_hd.jpg"
-      },
-    ],
-    infoData: [
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-      {
-        id: 1,
-        name: "丁丁嘛",
-        image: "",
-        num: 21,
-        answer: 123,
-      },
-    ],
+    requestUrl: app.globalData.requestUrl,
+    SwiperImg: [],
+    infoData: [],
     indicatorDots: true,
     vertical: false,
     autoplay: false,
@@ -88,9 +28,36 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getGamesList()
+    this.getSwiperList()
+    // 
   },
-
+  getGamesList(){
+    let that = this;
+    post("/user/getRank", {
+      id: wx.getStorageSync('id'),
+    }, function(res){
+      that.setData({
+        infoData: res.data.data.userList.list
+      })
+    })
+  },
+  getSwiperList(){
+    let that = this;
+    post("/user/getRoundImages", {}, function(res){
+      res.data.data.forEach(function(ele){
+        ele.imageUrl = app.globalData.requestUrl + "static/" + ele.imageUrl
+      })
+      that.setData({
+        SwiperImg: res.data.data
+      })
+    })
+  },
+  gamesBtn(){
+    wx.navigateTo({
+      url: '/pages/webView/webView',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

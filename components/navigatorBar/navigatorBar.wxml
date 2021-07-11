@@ -1,7 +1,7 @@
 <!--components/navigatorBar/navigatorBar.wxml-->
 <view class="comBar" style="padding-top: {{statusBarHeight}}px;height: {{menuButtonHeight}}px">
   <view class="avanter">
-    <image class="avanter-image"></image>
+    <image src="http://192.168.1.15:8090/static/img/user01.jpg" class="avanter-image"></image>
   </view>
   <view class="title">
     环保互动

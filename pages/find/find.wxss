@@ -4,6 +4,13 @@
   bottom: 0;
   width: 100%;
 }
+.section-swiper{
+  margin: 18rpx 24rpx;
+}
+swiper,
+swiper-item{
+  border-radius: 30rpx;
+}
 .receive{
 
 }
@@ -38,6 +45,10 @@
   height: 70rpx;
   background-color: #fd4913;
   border-radius: 50%;
+}
+.say-img{
+  display: block;
+  width: 100%;
 }
 .receive-good{
   margin: 14rpx 0;

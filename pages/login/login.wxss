@@ -1,0 +1,13 @@
+/* pages/login/login.wxss */
+.login{
+  margin: 0 30rpx;
+}
+.login-text{
+  text-align: center;
+  padding-top: 150rpx;
+  font-size: 35rpx;
+  box-sizing: border-box;
+}
+.login-input{
+  margin-top: 200rpx;
+}

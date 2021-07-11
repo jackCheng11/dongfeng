@@ -1,4 +1,9 @@
 // pages/find/find.js
+const {
+  get,
+  post
+} = require("../../utils/request");
+
 const app = getApp()
 
 Page({
@@ -8,26 +13,26 @@ Page({
    */
   data: {
     navBarHeight: app.globalData.navBarHeight,
-    SwiperImg: [
-      {
-        url: "/image/img/31624860162_.pic_hd.jpg"
-      },
-      {
-        url: "/image/img/41624860174_.pic_hd.jpg"
-      },
-      {
-        url: "/image/img/51624860191_.pic_hd.jpg"
-      },
-    ],
+    SwiperImg: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getSwiperList()
   },
-
+  getSwiperList(){
+    let that = this;
+    post("/user/getRoundImages", {}, function(res){
+      res.data.data.forEach(function(ele){
+        ele.imageUrl = app.globalData.requestUrl + "static/" + ele.imageUrl
+      })
+      that.setData({
+        SwiperImg: res.data.data
+      })
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

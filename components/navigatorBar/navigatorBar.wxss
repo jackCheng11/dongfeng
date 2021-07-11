@@ -1,7 +1,7 @@
 /* components/navigatorBar/navigatorBar.wxss */
 .comBar{
   position: fixed;
-  background-color: #ffffff;
+  background-color: #191D4D;
   width: 100%;
   z-index: 99999;
   display: flex;
@@ -21,6 +21,7 @@
 }
 .title{
   margin-top: 10rpx;
+  color: #ffffff;
 }
 .title{
   position: absolute;

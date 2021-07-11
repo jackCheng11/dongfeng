@@ -7,7 +7,7 @@
         duration="{{duration}}">
         <block wx:for="{{SwiperImg}}" wx:key="index">
           <swiper-item>
-            <image class="swiperImg" src="{{item.url}}" mode="aspectFill"></image>
+            <image class="swiperImg" src="{{item.imageUrl}}" mode="aspectFill"></image>
           </swiper-item>
         </block>
       </swiper>
@@ -23,21 +23,21 @@
         </view>
         <view class="table-data">
           <scroll-view scroll-y="true" style="height: 800rpx">
-            <block wx:for="{{infoData}}" :key="index">
+            <block wx:for="{{infoData}}" wx:key="index">
               <view class="table-data-main">
-                <view>{{item.id}}</view>
+                <view>{{item.rowNo}}</view>
                 <view class="flex-row">
                   <image class="infoData-image" src="{{}}"></image>
-                  <view>{{item.name}}</view>
+                  <view class="blue" style="font-size: 25rpx;padding-left:5rpx">{{item.name}}</view>
                 </view>
-
-                <view>{{item.num}}</view>
-
-                <view>{{item.answer}}</view>
+                <view class="blue">{{item.totalTime}}</view>
+                <view class="answer">{{item.totalScore}}题</view>
               </view>
             </block>
           </scroll-view>
-          <view class="mine-info">我的排名：<text>56</text>名</view>
+          <view class="mine-info">我的排名：<text class="sf">56</text>名</view>
+          
+          <van-button class="gamesBtn" type="primary" bindtap="gamesBtn" round block>进入游戏</van-button>
         </view>
       </view>
     </view>
